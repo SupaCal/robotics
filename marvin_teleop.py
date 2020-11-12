@@ -20,8 +20,8 @@ while True:
         rightMotor.run(joystick.axisC() * -1)
         leftMotor.run(joystick.axisC())
     middleMotor.run(joystick.axisB())
-    liftRightMotor.run(joystick.axisD())
-    liftLeftMotor.run(joystick.axisD())
+    liftRightMotor.run(joystick.axisD() / 2)
+    liftLeftMotor.run(joystick.axisD() / 2)
     buttonDown = joystick.bLdown()
     buttonUp = joystick.bLup()
     if buttonDown and buttonUp:
